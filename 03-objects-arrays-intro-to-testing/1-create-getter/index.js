@@ -7,6 +7,7 @@ export function createGetter(path) {
   const isObject = obj => {
     return typeof obj === 'object' && obj !== null && !Array.isArray(obj)
   }
+
   return (obj) => {
     let currObj = { ...obj };
     const propsArr = path.split('.');

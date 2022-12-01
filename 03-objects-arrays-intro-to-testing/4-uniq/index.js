@@ -10,7 +10,8 @@ export function uniq(arr) {
       if ( !uniqArr.includes(el) ) {
         uniqArr.push(el);
       }
-    })
+    });
   }
+
   return uniqArr;
 }

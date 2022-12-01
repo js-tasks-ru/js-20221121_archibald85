@@ -26,5 +26,6 @@ export function trimSymbols(string, size) {
       currentArr.push(arrStr[i]);
     }
   }
+
   return resultArr.join('');
 }
