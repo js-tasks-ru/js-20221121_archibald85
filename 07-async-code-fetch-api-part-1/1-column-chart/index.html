@@ -10,8 +10,8 @@
     <div class="dashboard__charts">
       <div>
         <div id="orders" class="dashboard__chart_orders"></div>
-        <input id="start" type="text" placeholder="yy-mm-dd"/>
-        <input id="end" type="text" placeholder="yy-mm-dd"/>
+        <input id="start" type="date" placeholder="yy-mm-dd"/>
+        <input id="end" type="date" placeholder="yy-mm-dd"/>
         <button id="loadOrders">Load data</button>
       </div>
       <div id="sales" class="dashboard__chart_sales"></div>
@@ -48,7 +48,7 @@
       });
 
       loadOrders.addEventListener('click', () => {
-        ordersChart.update(new Date(start.value), new Date(end.value))
+        ordersChart.update(new Date(start.value), new Date(end.value));
       });
 
       const salesChart = new ColumnChart({
